@@ -17,7 +17,7 @@ print(독립.shape, 종속.shape)
 X = tf.keras.layers.Input(shape=[13])
 Y = tf.keras.layers.Dense(1)(X)
 model = tf.keras.models.Model(X, Y)
-model.compile(loss='mse')
+model.compile(loss='mse') # 회기에 사용되는 loss='mse'
  
 # 3.데이터로 모델을 학습(FIT)합니다.
 model.fit(독립, 종속, epochs=10000, verbose=0)
